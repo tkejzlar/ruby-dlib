@@ -242,7 +242,7 @@ dlib_rb_rectangle_inspect(VALUE rect)
 static void
 Init_dlib_rectangle()
 {
-  cDlibRectangle = rb_define_class_under(mDlib, "Rectangle", rb_cData);
+  cDlibRectangle = rb_define_class_under(mDlib, "Rectangle", rb_cObject);
 
   rb_define_alloc_func(cDlibRectangle, dlib_rb_rectangle_alloc);
 

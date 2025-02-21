@@ -165,7 +165,7 @@ dlib_rb_dnn_fd_detect(VALUE dnn_fd, VALUE obj)
 static void
 Init_dlib_dnn_detector()
 {
-  cDlibDNNFaceDetector = rb_define_class_under(mDlib, "DNNFaceDetector", rb_cData);
+  cDlibDNNFaceDetector = rb_define_class_under(mDlib, "DNNFaceDetector", rb_cObject);
 
   rb_define_alloc_func(cDlibDNNFaceDetector, dlib_rb_dnn_fd_alloc);
 

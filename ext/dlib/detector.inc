@@ -75,7 +75,7 @@ dlib_rb_ffd_detect(VALUE ffd, VALUE image)
 static void
 Init_dlib_detector()
 {
-  cDlibFrontalFaceDetector = rb_define_class_under(mDlib, "FrontalFaceDetector", rb_cData);
+  cDlibFrontalFaceDetector = rb_define_class_under(mDlib, "FrontalFaceDetector", rb_cObject);
 
   rb_define_alloc_func(cDlibFrontalFaceDetector, dlib_rb_ffd_alloc);
 

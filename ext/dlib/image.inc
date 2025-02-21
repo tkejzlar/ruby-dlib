@@ -152,7 +152,7 @@ dlib_rb_image_draw_rectangle(int argc, VALUE *argv, VALUE image)
 static void
 Init_dlib_image()
 {
-  cDlibImage = rb_define_class_under(mDlib, "Image", rb_cData);
+  cDlibImage = rb_define_class_under(mDlib, "Image", rb_cObject);
 
   eDlibImageLoadError = rb_define_class_under(cDlibImage, "LoadError", eDlibError);
 
